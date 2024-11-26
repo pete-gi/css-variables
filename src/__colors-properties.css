@@ -1,0 +1,321 @@
+@property --_color-lightness-modifier {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 10;
+}
+
+@property --color-transparent {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 100%, 0);
+}
+
+/* Color - Dark */
+@property --color-dark {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-dark-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-dark-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-dark-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-dark-40 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-dark-50 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+
+/* Color - Light */
+@property --color-light {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 100%);
+}
+@property --color-light-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-light-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-light-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-light-40 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-light-50 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+
+/* Color - Text */
+@property --color-text {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: light-dark(var(--color-dark-10), var(--color-light));
+}
+@property --color-text-dim {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: light-dark(var(--color-dark-20), var(--color-light-10));
+}
+
+/* Color - Background */
+@property --color-background {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: light-dark(var(--color-light), var(--color-dark-10));
+}
+@property --color-background-dim {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: light-dark(var(--color-light-10), var(--color-dark-20));
+}
+
+/* Color - Primary */
+@property --color-primary {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(277, 68%, 36%);
+}
+@property --color-primary-light-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-primary-light-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-primary-light-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-primary-dark-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-primary-dark-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-primary-dark-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+
+/* Color - Secondary */
+@property --color-secondary {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(321, 73%, 41%);
+}
+@property --color-secondary-light-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-secondary-light-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-secondary-light-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-secondary-dark-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-secondary-dark-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-secondary-dark-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+
+/* Color - Success */
+@property --color-success {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(125, 79%, 35%);
+}
+@property --color-success-light-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-success-light-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-success-light-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-success-dark-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-success-dark-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-success-dark-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+
+/* Color - Danger */
+@property --color-danger {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(4, 75%, 35%);
+}
+@property --color-danger-light-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-danger-light-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-danger-light-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-danger-dark-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-danger-dark-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-danger-dark-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+
+/* Color - Warning */
+@property --color-warning {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(54, 84%, 32%);
+}
+@property --color-warning-light-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-warning-light-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-warning-light-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-warning-dark-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-warning-dark-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-warning-dark-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+
+/* Color - Info */
+@property --color-info {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(205, 74%, 36%);
+}
+@property --color-info-light-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-info-light-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-info-light-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-info-dark-10 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-info-dark-20 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
+@property --color-info-dark-30 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(0, 0%, 0%);
+}
