@@ -1,0 +1,256 @@
+@layer variables {
+  @property --_color-lightness-modifier {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 10;
+  }
+
+  @property --color-transparent {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(0, 0%, 100%, 0);
+  }
+
+  /* Color - Dark */
+  @property --color-dark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(0, 0%, 0%);
+  }
+
+  /* Color - Light */
+  @property --color-light {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(0, 0%, 100%);
+  }
+
+  /* Color - Primary */
+  @property --color-primary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(277, 68%, 36%);
+  }
+
+  /* Color - Secondary */
+  @property --color-secondary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(321, 73%, 41%);
+  }
+
+  /* Color - Success */
+  @property --color-success {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(125, 79%, 35%);
+  }
+
+  /* Color - Danger */
+  @property --color-danger {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(4, 75%, 35%);
+  }
+
+  /* Color - Warning */
+  @property --color-warning {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(54, 84%, 32%);
+  }
+
+  /* Color - Info */
+  @property --color-info {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(205, 74%, 36%);
+  }
+
+  :root {
+    /* Color - Dark */
+    --color-dark-10: hsl(
+      from var(--color-dark) h s calc(l + var(--_color-lightness-modifier))
+    );
+    --color-dark-20: hsl(
+      from var(--color-dark) h s calc(l + var(--_color-lightness-modifier) * 2)
+    );
+    --color-dark-30: hsl(
+      from var(--color-dark) h s calc(l + var(--_color-lightness-modifier) * 3)
+    );
+    --color-dark-40: hsl(
+      from var(--color-dark) h s calc(l + var(--_color-lightness-modifier) * 4)
+    );
+    --color-dark-50: hsl(
+      from var(--color-dark) h s calc(l + var(--_color-lightness-modifier) * 5)
+    );
+
+    /* Color - Light */
+    --color-light-10: hsl(
+      from var(--color-light) h s calc(l - var(--_color-lightness-modifier))
+    );
+    --color-light-20: hsl(
+      from var(--color-light) h s calc(l - var(--_color-lightness-modifier) * 2)
+    );
+    --color-light-30: hsl(
+      from var(--color-light) h s calc(l - var(--_color-lightness-modifier) * 3)
+    );
+    --color-light-40: hsl(
+      from var(--color-light) h s calc(l - var(--_color-lightness-modifier) * 4)
+    );
+    --color-light-50: hsl(
+      from var(--color-light) h s calc(l - var(--_color-lightness-modifier) * 5)
+    );
+
+    /* Color - Text */
+    --color-text: light-dark(var(--color-dark-10), var(--color-light));
+    --color-text-dim: light-dark(var(--color-dark-20), var(--color-light-10));
+
+    /* Color - Background */
+    --color-background: light-dark(var(--color-light), var(--color-dark-10));
+    --color-background-dim: light-dark(
+      var(--color-light-10),
+      var(--color-dark-20)
+    );
+
+    /* Color - Primary */
+    --color-primary-light-10: hsl(
+      from var(--color-primary) h s calc(l + var(--_color-lightness-modifier))
+    );
+    --color-primary-light-20: hsl(
+      from var(--color-primary) h s
+        calc(l + var(--_color-lightness-modifier) * 2)
+    );
+    --color-primary-light-30: hsl(
+      from var(--color-primary) h s
+        calc(l + var(--_color-lightness-modifier) * 3)
+    );
+    --color-primary-dark-10: hsl(
+      from var(--color-primary) h s calc(l - var(--_color-lightness-modifier))
+    );
+    --color-primary-dark-20: hsl(
+      from var(--color-primary) h s
+        calc(l - var(--_color-lightness-modifier) * 2)
+    );
+    --color-primary-dark-30: hsl(
+      from var(--color-primary) h s
+        calc(l - var(--_color-lightness-modifier) * 3)
+    );
+
+    /* Color - Secondary */
+    --color-secondary-light-10: hsl(
+      from var(--color-secondary) h s calc(l + var(--_color-lightness-modifier))
+    );
+    --color-secondary-light-20: hsl(
+      from var(--color-secondary) h s
+        calc(l + var(--_color-lightness-modifier) * 2)
+    );
+    --color-secondary-light-30: hsl(
+      from var(--color-secondary) h s
+        calc(l + var(--_color-lightness-modifier) * 3)
+    );
+    --color-secondary-dark-10: hsl(
+      from var(--color-secondary) h s calc(l - var(--_color-lightness-modifier))
+    );
+    --color-secondary-dark-20: hsl(
+      from var(--color-secondary) h s
+        calc(l - var(--_color-lightness-modifier) * 2)
+    );
+    --color-secondary-dark-30: hsl(
+      from var(--color-secondary) h s
+        calc(l - var(--_color-lightness-modifier) * 3)
+    );
+
+    /* Color - Success */
+    --color-success-light-10: hsl(
+      from var(--color-success) h s calc(l + var(--_color-lightness-modifier))
+    );
+    --color-success-light-20: hsl(
+      from var(--color-success) h s
+        calc(l + var(--_color-lightness-modifier) * 2)
+    );
+    --color-success-light-30: hsl(
+      from var(--color-success) h s
+        calc(l + var(--_color-lightness-modifier) * 3)
+    );
+    --color-success-dark-10: hsl(
+      from var(--color-success) h s calc(l - var(--_color-lightness-modifier))
+    );
+    --color-success-dark-20: hsl(
+      from var(--color-success) h s
+        calc(l - var(--_color-lightness-modifier) * 2)
+    );
+    --color-success-dark-30: hsl(
+      from var(--color-success) h s
+        calc(l - var(--_color-lightness-modifier) * 3)
+    );
+
+    /* Color - Danger */
+    --color-danger-light-10: hsl(
+      from var(--color-danger) h s calc(l + var(--_color-lightness-modifier))
+    );
+    --color-danger-light-20: hsl(
+      from var(--color-danger) h s
+        calc(l + var(--_color-lightness-modifier) * 2)
+    );
+    --color-danger-light-30: hsl(
+      from var(--color-danger) h s
+        calc(l + var(--_color-lightness-modifier) * 3)
+    );
+    --color-danger-dark-10: hsl(
+      from var(--color-danger) h s calc(l - var(--_color-lightness-modifier))
+    );
+    --color-danger-dark-20: hsl(
+      from var(--color-danger) h s
+        calc(l - var(--_color-lightness-modifier) * 2)
+    );
+    --color-danger-dark-30: hsl(
+      from var(--color-danger) h s
+        calc(l - var(--_color-lightness-modifier) * 3)
+    );
+
+    /* Color - Warning */
+    --color-warning-light-10: hsl(
+      from var(--color-warning) h s calc(l + var(--_color-lightness-modifier))
+    );
+    --color-warning-light-20: hsl(
+      from var(--color-warning) h s
+        calc(l + var(--_color-lightness-modifier) * 2)
+    );
+    --color-warning-light-30: hsl(
+      from var(--color-warning) h s
+        calc(l + var(--_color-lightness-modifier) * 3)
+    );
+    --color-warning-dark-10: hsl(
+      from var(--color-warning) h s calc(l - var(--_color-lightness-modifier))
+    );
+    --color-warning-dark-20: hsl(
+      from var(--color-warning) h s
+        calc(l - var(--_color-lightness-modifier) * 2)
+    );
+    --color-warning-dark-30: hsl(
+      from var(--color-warning) h s
+        calc(l - var(--_color-lightness-modifier) * 3)
+    );
+
+    /* Color - Info */
+    --color-info-light-10: hsl(
+      from var(--color-info) h s calc(l + var(--_color-lightness-modifier))
+    );
+    --color-info-light-20: hsl(
+      from var(--color-info) h s calc(l + var(--_color-lightness-modifier) * 2)
+    );
+    --color-info-light-30: hsl(
+      from var(--color-info) h s calc(l + var(--_color-lightness-modifier) * 3)
+    );
+    --color-info-dark-10: hsl(
+      from var(--color-info) h s calc(l - var(--_color-lightness-modifier))
+    );
+    --color-info-dark-20: hsl(
+      from var(--color-info) h s calc(l - var(--_color-lightness-modifier) * 2)
+    );
+    --color-info-dark-30: hsl(
+      from var(--color-info) h s calc(l - var(--_color-lightness-modifier) * 3)
+    );
+  }
+}

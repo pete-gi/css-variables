@@ -1,0 +1,26 @@
+{
+  "name": "@petegi/css-variables",
+  "version": "1.0.0",
+  "description": "Custom CSS variables to be used in private projects",
+  "main": "variables.css",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pete-gi/css-variables.git"
+  },
+  "keywords": [
+    "css",
+    "variables",
+    "custom",
+    "properties"
+  ],
+  "author": "Piotr Golczyk <petegi.sq@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pete-gi/css-variables/issues"
+  },
+  "homepage": "https://github.com/pete-gi/css-variables"
+}

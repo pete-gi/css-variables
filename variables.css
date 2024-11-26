@@ -1,0 +1,7 @@
+@layer prevariables, variables;
+
+@import "./src/borders.css";
+/* @import "./src/colors-properties.css"; */
+@import "./src/colors.css";
+@import "./src/durations.css";
+@import "./src/typography.css";
