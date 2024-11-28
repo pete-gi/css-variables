@@ -1,0 +1,51 @@
+@layer variables {
+  :root {
+    container: --root / inline-size;
+
+    --xs: false;
+    --sm: false;
+    --md: false;
+    --lg: false;
+    --xl: false;
+
+    @media (width <= 640px) {
+      --xs: false;
+    }
+    @media (width > 640px) {
+      --xs: true;
+    }
+
+    @media (width <= 768px) {
+      --sm: false;
+    }
+    @media (width > 768px) {
+      --sm: true;
+    }
+
+    @media (width <= 1024px) {
+      --md: false;
+    }
+    @media (width > 1024px) {
+      --md: true;
+    }
+
+    @media (width <= 1280px) {
+      --lg: false;
+    }
+    @media (width > 1280px) {
+      --lg: true;
+    }
+
+    @media (width <= 1536px) {
+      --xl: false;
+    }
+    @media (width > 1536px) {
+      --xl: true;
+    }
+  }
+}
+
+/* USAGE */
+/* @container --root style(--xs: true) {
+     ...
+} */
