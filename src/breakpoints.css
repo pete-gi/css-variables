@@ -2,11 +2,11 @@
   :root {
     container: --root / inline-size;
 
-    --breakpoint-xs: 640px;
-    --breakpoint-sm: 768px;
-    --breakpoint-md: 1024px;
-    --breakpoint-lg: 1280px;
-    --breakpoint-xl: 1536px;
+    --breakpoint-xs: 40rem;
+    --breakpoint-sm: 48rem;
+    --breakpoint-md: 64rem;
+    --breakpoint-lg: 80rem;
+    --breakpoint-xl: 96rem;
 
     --xs: false;
     --sm: false;
@@ -14,38 +14,38 @@
     --lg: false;
     --xl: false;
 
-    @media (width <= 640px) {
+    @media (width <= 40rem) {
       --xs: false;
     }
-    @media (width > 640px) {
+    @media (width > 40rem) {
       --xs: true;
     }
 
-    @media (width <= 768px) {
+    @media (width <= 48rem) {
       --sm: false;
     }
-    @media (width > 768px) {
+    @media (width > 48rem) {
       --sm: true;
     }
 
-    @media (width <= 1024px) {
+    @media (width <= 64rem) {
       --md: false;
     }
-    @media (width > 1024px) {
+    @media (width > 64rem) {
       --md: true;
     }
 
-    @media (width <= 1280px) {
+    @media (width <= 80rem) {
       --lg: false;
     }
-    @media (width > 1280px) {
+    @media (width > 80rem) {
       --lg: true;
     }
 
-    @media (width <= 1536px) {
+    @media (width <= 96rem) {
       --xl: false;
     }
-    @media (width > 1536px) {
+    @media (width > 96rem) {
       --xl: true;
     }
   }
